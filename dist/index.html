@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css">
+    <title>Document</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;" class="bg-blue-600 ">
+    <div class="flex items-center justify-center mt-40">
+        <div style="width: 500px;" class="bg-white rounded-lg text-black">
+            <div class="p-6">
+                <div>
+                    <input placeholder="Add a new task..." style="border: 1px solid; border-color: rgb(140, 140, 140);"
+                        class="user-input outline-none p-3 rounded-md w-full" type="text" name="" id="">
+                </div>
+                <div class="hidden error-msg mt-4 alert alert-error shadow-lg shadow-gray-300">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Error! Please type something.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Todo Nav -->
+            <div class="pb-6 px-6 border-b-[1px] border-solid border-gray-300  shadow-md">
+                <div class="flex justify-between items-center">
+                    <ul class="flex text-lg space-x-3">
+                        <li class="cursor-pointer transform hover:-translate-y-[2px] duration-150">All</li>
+                        <li class="cursor-pointer transform hover:-translate-y-[2px] duration-150">Pending</li>
+                        <li class="cursor-pointer transform hover:-translate-y-[2px] duration-150">Completed</li>
+                    </ul>
+                    <div class="">
+                        <button class="btn btn-sm del-item">Clear All</button>
+                        <button class="btn btn-sm add-item">Add</button>
+                    </div>
+                </div>
+            </div>
+            <!-- todos -->
+            <div class="m-6">
+                <ul class="items todos-add mb-8">
+                    <li class="todo-item flex items-center justify-between border-b-[1px] border-gray-500 py-4">
+                        <div class="divtodo flex items-center space-x-4 my-2">
+                            <input type="checkbox" checked="unchecked" class="checkbox" />
+                            <span class="todo-text text-lg">ACTIVE Stop Procrastinating TODAY</span>
+                        </div>
+                        <div>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="btn btn-ghost btn-sm m-1">...</label>
+                                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><button id=""  class="mark-todo-done todo-done">Done</button></li>
+                                    <li><button id="" class="del-todo-btn delete-todo">Delete</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="todo-item flex items-center justify-between border-b-[1px] border-gray-500 py-4">
+                        <div class="flex items-center space-x-4 my-2">
+                            <input type="checkbox" checked="unchecked" class=" checkbox" />
+                            <span class="todo-text text-lg">Stop Procrastinating TODAY</span>
+                        </div>
+                        <div>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="btn btn-ghost btn-sm m-1">...</label>
+                                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><button id=""  class="mark-todo-done todo-done">Done</button></li>
+                                    <li><button id="" class="del-todo-btn delete-todo">Delete</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="todo-item flex items-center justify-between border-b-[1px] border-gray-500 py-4">
+                        <div class="idkk flex items-center space-x-4 my-2">
+                            <input type="checkbox" checked="unchecked" class=" checkbox" />
+                            <span class="todo-text text-lg">Stop Procrastinating TODAY</span>
+                        </div>
+                        <div>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="btn btn-ghost btn-sm m-1">...</label>
+                                <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li><button id=""  class="mark-todo-done todo-done">Done</button></li>
+                                    <li><button id="" class="del-todo-btn delete-todo">Delete</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/dist/app.js"></script>
+
+</html>
